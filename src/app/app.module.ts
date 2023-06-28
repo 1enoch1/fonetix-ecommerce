@@ -19,6 +19,7 @@ import { MatInputModule } from "@angular/material/input";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatDialogModule } from "@angular/material/dialog";
 import { MatProgressBarModule } from "@angular/material/progress-bar";
+import { HomeModule } from "./components/home/home.module";
 
 @NgModule({
   declarations: [AppComponent],
@@ -27,6 +28,7 @@ import { MatProgressBarModule } from "@angular/material/progress-bar";
     AppRoutingModule,
     BrowserAnimationsModule,
     RouterModule,
+    HomeModule,
     SharedModule,
     MatIconModule,
     MatButtonModule,
@@ -35,7 +37,6 @@ import { MatProgressBarModule } from "@angular/material/progress-bar";
     MatDividerModule,
     RouterModule,
     MatProgressSpinnerModule,
-    AppRoutingModule,
     HttpClientModule,
     MatFormFieldModule,
     MatInputModule,

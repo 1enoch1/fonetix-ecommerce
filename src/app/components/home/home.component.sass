@@ -1,0 +1,42 @@
+@import "../../../../variables.sass"
+
+.home-collection
+    display: grid
+    grid-auto-columns: max-content
+    grid-auto-flow: dense
+    grid-auto-rows: minmax(100px, auto)
+    grid-gap: 20px
+    grid-template-columns: repeat(3, 1fr)
+
+    margin: 60px auto
+    max-width: 800px
+.collection-item
+    grid-column: span 1
+    grid-row: span 1
+    margin-top: 40px
+
+    &:nth-of-type(3n + 1)
+        grid-column: span 2
+    &__name
+
+    p
+        font-family: sans-serif
+        font-size: 16px
+        font-weight: bold
+
+    a
+        color: $LightestSlateGrey
+        text-decoration: none
+
+    &__description
+
+        p
+            font-family: sans-serif
+            font-size: 14px
+
+    &__image
+        background-color: $SlateWhite
+        display: block
+        height: 100%
+        min-height: 200px
+        width: 100%

@@ -1,11 +1,20 @@
 <nav [@animateNavMenu] class="navbar navbar fixed-to-page-top" [class.nav-shadow]="this.yPagePosition > 0">
   <div class="container">
+    <a href="" class="navbar-brand light-text">
+      <!-- todo add logo image here  -->
+      <div style="position: absolute;
+    bottom: 1px;
+    margin: 0 auto;">
+        <img src="assets/images/logo/altlogo.png" height="80" width="80" alt="logo">
+      </div>
+    </a>
     <ul ngbNav #nav="ngbNav" class="menu-ul">
       <li ngbNavItem>
         <a ngbNavLink>
           <span class="nav-menu-item-number">01</span>
           <span class="nav-text">Test</span>
         </a>
+        <ng-template ngbNavContent>First content</ng-template>
       </li>
       <li ngbNavItem>
         <a ngbNavLink>
@@ -26,8 +35,8 @@
           <span class="nav-text">Test</span>
         </a>
       </li>
-      <li>
-        <a ngbNavLink href="" class="main-btn">Register</a>
+      <li ngbNavItem>
+        <a ngbNavLink href="" class="main-btn register-btn">Register</a>
       </li>
     </ul>
   </div>
