@@ -1,0 +1,36 @@
+@import "../../../../../variables.sass"
+
+.hero
+    background: url('https://source.unsplash.com/C1r9pODhfQ4')
+    image-rendering: -webkit-optimize-contrast
+    -o-background-size: cover
+    background-repeat: no-repeat
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    background-size: cover
+    padding: 4rem 2rem
+    height: 42vh
+    display: grid
+    align-items: center
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr))
+    position: relative
+    aspect-ratio: 16/9
+    margin: 0 auto
+.hero > *
+    color: $SlateWhite
+
+.hero > h1
+    font-size: 4rem
+    padding-bottom: 1rem
+
+.hero > article > p
+    font-size: 1.5rem
+    font-weight: 200
+
+.hero > article > a
+    padding: 8px
+    background: #51517a
+    color: #e9f2fe
+    border-radius: 4px
+    position: relative
+    top: 2px
