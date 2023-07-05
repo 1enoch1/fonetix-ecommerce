@@ -1,0 +1,104 @@
+@import "../../../../../variables.sass"
+
+.quick-services-section
+    padding: 2rem
+
+.quick-services-section > ul
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
+    grid-gap: 1rem
+    list-style: none
+
+.quick-services-section > ul > li
+    border: 3px solid #545594
+    border-radius: .5rem
+    background: mintcream
+
+.quick-services-section > ul > li > figure
+    max-height: 580px
+    overflow: hidden
+    border-top-left-radius: .3rem
+    border-top-right-radius: .3rem
+    position: relative
+
+.quick-services-section > ul > li > figure > img
+    width: 100%
+    background: url("https://source.unsplash.com/K7OUs6y_cm8")
+    image-rendering: -webkit-optimize-contrast
+    -o-background-size: cover
+    background-repeat: no-repeat
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    background-size: cover
+    aspect-ratio: 16/9
+    height: auto
+
+.quick-services-section > ul > li > figure > figcaption
+    position: absolute
+    bottom: 0
+    background-color: rgba(0,0,0,.7)
+    width: 100%
+
+.quick-services-section > ul > li > figure > figcaption > h3
+    color: white
+    padding: .75rem
+    font-size: 1.25rem
+
+.quick-services-section > ul > li > p
+    font-size: 1rem
+    line-height: 1.5
+    padding: 1rem .75rem
+    color: #666666
+
+.quick-services-section > ul > li > a
+    padding: .5rem 1rem
+    margin: .5rem
+    background: #51517a
+    color: $SlateWhite
+    border-radius: 4px
+    position: relative
+    bottom: 20px
+
+.section-padding
+    padding: 100px 0
+
+.quick-services-section  .section-title
+    margin-bottom: 45px
+    text-align: center
+    h2
+        font-weight: 700
+        text-transform: capitalize
+        font-size: 33px
+        color: $LightestSlateGrey
+    h5
+        color: $PurpleHint
+        font-size: 16px
+        font-weight: 600
+        margin-bottom: 10px
+        letter-spacing: 0.3px
+
+.quick-services-box
+    padding: 30px 15px
+    text-align: center
+    background-color: #ffffff
+    margin-top: 30px
+    display: block
+    border-radius: 5px
+    -webkit-box-shadow: 0px 0px 15px 0px rgb(72, 73, 121, 0.15)
+    -moz-box-shadow: 0px 0px 15px 0px rgb(72, 73, 121, 0.15)
+    box-shadow: 0px 0px 15px 0px rgb(72, 73, 121, 0.15)
+    -webkit-transition: all 400ms ease-out
+    transition: all 400ms ease-out
+    will-change: transform
+    h3
+        color: $PurpleHint
+
+.quick-services-box .quick-services-img img
+    display: inline-block
+    max-width: 100%
+    image-rendering: -webkit-optimize-contrast
+    -o-background-size: cover
+    background-repeat: no-repeat
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    background-size: cover
